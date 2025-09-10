@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng kí tài khoản</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            background: #c5c3c3ff; 
+            background-image: url('../images/nenden.jpg');
+            background-size: cover; 
+            background-repeat: no-repeat;
+            background-position: center center;
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .register-container {
+            width: 300px; 
+            padding: 20px;
+            background: #ddddddff; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px #ccc;
+        }
+        h2 {
+            text-align: center;
+            color: #222;
+            margin-bottom: 18px;
+            font-family: Arial, sans-serif;
+        }
+        label {
+            color: #333;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+        }
+        input[type="text"], input[type="password"], input[type="email"] {
+            width: 100%; padding: 8px; margin: 8px 0; box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            background: #fafafa;
+            font-family: Arial, sans-serif;
+        }
+        input[type="submit"] {
+            width: 100%; padding: 8px; background: #007bff; color: #fff; border: none; border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background 0.2s;
+            font-family: Arial, sans-serif;
+        }
+        input[type="submit"]:hover { background: #0056b3; }
+        .login-link {
+            margin-top: 20px; 
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .login-link a {
+            color: #e74c3c; 
+            font-weight: bold; 
+            text-decoration: underline; 
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <h2>Đăng kí tài khoản</h2>
+        <form method="post" action="">
+            <label for="username">Tên đăng nhập:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Mật khẩu:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm_password">Nhập lại mật khẩu:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+
+            <input type="submit" value="Đăng kí">
+        </form>
+        <div class="login-link">
+            Đã có tài khoản? 
+            <a href="login.php">Đăng nhập</a>
+        </div>
+    </div>
+</body>
